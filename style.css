@@ -35,7 +35,8 @@ li[id*=portfolio-] img {
 
 li[id*=portfolio-] {
 width:  460px !important;
-height: 460px !important;
+height: 428px !important;
+margin: 20px 10px 0px 10px !important;
 }
 
 .description {
@@ -44,6 +45,17 @@ margin-top: 307px !important;
 border-bottom: 1px solid #dfdfdf !important;
 }
 
+
+footer {
+    margin-top: 20px !important;
+}
+
 footer p a {
     color: #999999 !important;
 }
+
+/* Remove text shadows */
+h2 {text-shadow:none !important;}
+body>header h1 {text-shadow:none !important;}
+#portfolio h3{text-shadow:none !important;}
+footer {text-shadow:none !important;}
