@@ -32,3 +32,14 @@ margin-left: 30px;
 li[id*=portfolio-] img {
     z-index: auto !important;
 }
+
+li[id*=portfolio-] {
+width:  460px !important;
+height: 460px !important;
+}
+
+.description {
+width: 458px !important;
+margin-top: 307px !important;
+border-bottom: 1px solid #dfdfdf !important;
+}

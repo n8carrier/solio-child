@@ -32,7 +32,7 @@
 												
 				<div class="wrapper">
 						
-						<h3>Recent Work</h3>
+						<h3>Portfolio</h3>
 						
 						<ul id="portfolio-filter" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
 							<li><a href="#all">All</a></li>
@@ -59,7 +59,7 @@
 
 						<section class="portfolio-image">
                                                         <a href="<?php echo str_replace( home_url() . '/portfolio', '', get_permalink($post->ID) ); ?>" title="<?php the_title()?>">
-							<?php the_post_thumbnail('portfolio-image', array( 'alt' => get_the_title(), 'class' =>"cover", 'title' => get_the_title() . "" . get_the_excerpt() . "")); ?></a><br/>
+							<?php the_post_thumbnail('portfolio-image-large', array( 'alt' => get_the_title(), 'class' =>"cover", 'title' => get_the_title() . "" . get_the_excerpt() . "")); ?></a><br/>
 						</section>
 						
 						<div class="description">
@@ -68,7 +68,7 @@
 							  $excerpt = get_the_excerpt();
 							  echo string_limit_words($excerpt,15);
 							?></p>
-						</div><div class="description-shadow"></div>
+						</div><!--<div class="description-shadow"></div>-->
 						
 					</li>
 					<?php endwhile; ?>	

@@ -5,5 +5,6 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
 }
+add_image_size( 'portfolio-image-large', 460, 307, true );
 
 ?>
