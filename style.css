@@ -43,3 +43,7 @@ width: 458px !important;
 margin-top: 307px !important;
 border-bottom: 1px solid #dfdfdf !important;
 }
+
+footer p a {
+    color: #999999 !important;
+}
