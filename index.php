@@ -59,14 +59,14 @@
 
 						<section class="portfolio-image">
                                                         <a href="<?php echo str_replace( home_url() . '/portfolio', '', get_permalink($post->ID) ); ?>" title="<?php the_title()?>">
-							<?php the_post_thumbnail('portfolio-image-large', array( 'alt' => get_the_title(), 'class' =>"cover", 'title' => get_the_title() . "" . get_the_excerpt() . "")); ?></a><br/>
+							<?php the_post_thumbnail('portfolio-image-large', array( 'alt' => get_the_title(), 'class' =>"cover", 'title' => get_the_title())); ?></a><br/>
 						</section>
 						
 						<div class="description">
 							<a href="<?php echo str_replace( home_url() . '/portfolio', '', get_permalink($post->ID) ); ?>"><h4><?php the_title() ?></h4></a>
 							<p><?php
 							  $excerpt = get_the_excerpt();
-							  echo string_limit_words($excerpt,15);
+							  echo string_limit_words($excerpt,30);
 							?></p>
 						</div><!--<div class="description-shadow"></div>-->
 						
